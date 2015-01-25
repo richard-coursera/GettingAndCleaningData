@@ -18,20 +18,11 @@ The data is read from the following files,
 - UCI HAR Dataset\activity_labels.txt
 - UCI HAR Dataset\features.txt
 
-
-
 ## Code Variables
-
-# 1.Merges the training and the test sets to create one data set.
-# Read train data
-train = read.csv("UCI HAR Dataset/train/X_train.txt", sep = "", header = FALSE)
-train[,562] = read.csv("UCI HAR Dataset/train/Y_train.txt", sep = "", header = FALSE)
-train[,563] = read.csv("UCI HAR Dataset/train/subject_train.txt", sep = "", header = FALSE)
-
-# Read test data
-test = read.csv("UCI HAR Dataset/test/X_test.txt", sep = "", header = FALSE)
-test[,562] = read.csv("UCI HAR Dataset/test/Y_test.txt", sep = "", header = FALSE)
-test[,563] = read.csv("UCI HAR Dataset/test/subject_test.txt", sep = "", header = FALSE)
+dd
+- test: Stores test data from subject_test.txt, X_test.txt and y_test.txt
+- train: Stores training data from subject_train.txt, X_train.txt and Y_train.txt 
+dd
 
 # Merge training and test sets
 data = rbind(train, test)
